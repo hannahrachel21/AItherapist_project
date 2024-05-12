@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feelings ChatBot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5fg3PF-s8ZCMYVcLz3sDKSYQOKFPRo8yQHg1aOsfNLjBejzC3gVO3hgSpK-y6BkYmAGElY2nmoLaN8XuuRSDSsP1hY8mg5RDyZxEl9kzYSQm4gbXwzn23BEqlm4-umxec4h5ruzl7J6VEqmC-iZC9irl02W4V493LXpiVhA4b1W6rqMHMNej1erNNoGsjOaD3E4EjHy24FELAKSeXriWN7m1UVNt7O-CGusi0ADOqtpo5UzyvvprZi-YQuvBGvOqTRq1riUI4Jkpbpyi_VQeBM8jcUg2ds-eqFAXigBz1QLUSZTFGroTdtzJ3LZ2K7046yBce076Uer0gScFEvY0kxNzMTmozKn4lHLsxs4aCs3uNbJ_DrrFv1QzToEmgVyBmdiqYQRejfPu_LeSOwVqGJ4EDJhG16GeH2p2RWUpTjeplN79wiiakYllPmHXp6rhp8U6_Wjm3qWZYlt1JVYV8rkqO8BKogjoAIEDRZvB_9W8wj5VEsOIp3yUzgLQi4MDGuJMEZ1Y4fep5OtkiQJO8WuYBUgJhIq7_X_Xprgs2_FGFGQS1MU7_DYJvQZ4D3bo3Cn65uyVjf23UAqh8fJs1vodF6auElshQShGmWqyPlm19C3Bv2aEhZtLPW_VnZpEKF9HoLJr8SXq7mSwyySI-IQ-3a8ugTGrb_-2ZkTPIk7DLVoGOXvNwqEOKZ6ka82796NM86Eq5jK8l8mKBjbhNA8m93mqk87vL3TGini9tTLk1qXB-VMdvU2FBlSEvLjndI5n06vMlmECYhsQCx_s7t2XbZpG9ZGWVWUVMeelb6N29HVyCunGL-2FGahj9YdBxUsDGFkG2iikkdToUcCntZWUdlOazc2cW32mTHdN_ET0saZfkVRC7n2OFkb74p4s3wlfRELxYMC1-dxLZfHWK5z7FKKKncvQWj-1C29y6hWeIXdVDJJWTk2H4OKjGOxgWKuzaaS0j4n-EEe_lyZ9AR4Ti05woTMiQ1yFqUFL6B20wksAly-PmRWdeAKwzZUff8xTfOCQHtYppvVUrENZaoe3b2JmNNHIhPax8xnGLAibDgd5u_87jILseOrXNXbFwrWMdAxXAzDSz9lasiXqifou1j9HKV9RFks8baLyFyARTi-tg6rjOuTxETDN4gxz680a8xy8vYb-5MI2Mz2krfhchmuCVFteWT4yyyHLXVRUegkJiXSobGO75aOQj-Bpf9ExxdBc_2YAKuVRa-nkReomfVEn0bC2TyClxNt1QnvU2_u3iUhkXLiMTKeJilgbb7DMc-T6CePEs2ar27wJzmOWB2I2MVrQukr9DAum96kp2ZG4fYtEC6D9zhAUjsNZXDm_cmrLehzhOjlmUOhypr_PP8bZ_MikMeBMOpkEi_1OFIgMlnmK4-eC14HtRWHLDciHunURYfxcmtoTynb5sNiBWrBQxt6VH7xIKRfqmy9s37apZoJF1uBJXJn4eZcj2I8pceO4S6l1zaNHFU3g3GnVFzGFssvbsT0WY9zz1SfSa_ZJbwibMczYn3gW199dZw_YOyIOnOtdp_E5IoOnKWFXneONNANtBHr6liY4XyhRIie628t-Tr6-urQwhwjFyHN7fz9Cr9JsmKQuY86J1bLg0kvNOy7pqpykD9QT8LZzCQDTzKs157K_VZYDt7It" nonce="390717a2aedf21eda0970827c0fabfe0" charset="UTF-8"></script></head>
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f7f7f7;
+}
+
+.chatBot {
+    border: 3px solid royalblue;
+    border-radius: 10px;
+    margin: 50px auto;
+    overflow: hidden;
+    width: 500px;
+    overflow-y: clip;
+    height: 600px;
+    background: rgb(255, 255, 255) url(gfg-gg-logo.svg);
+    background-size: contain;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background-color: royalblue;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 7px 7px 0 0;
+}
+
+header h2 {
+    color: #fff;
+    margin: 0;
+}
+
+.chatbox {
+    padding: 15px;
+    list-style: none;
+    overflow-y: auto;
+    height: 400px;
+}
+
+.chatbox li {
+    margin-bottom: 10px;
+}
+
+.chat p {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.chat-outgoing p {
+    background-color: #162887;
+    align-self: flex-end;
+    color: #fff;
+}
+
+.chat-incoming p {
+    background-color: #eaeaea;
+}
+
+.chat-input {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input textarea {
+    width: 522px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    resize: none;
+    outline: none;
+    overflow-y: scroll;
+    background-color: #dcdcdc85;
+    font-size: 16px;
+    color: royalblue;
+    font-weight: 600;
+    margin-top: -10px;
+    margin-left: -15px;
+    height: 71px;
+}
+
+#cross {
+    float: right;
+    position: relative;
+    top: -38px;
+    left: -15px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+#cross:hover {
+    color: red;
+    transition: all .5s;
+}
+
+.chatbox .chat p.error {
+    color: #ffffff;
+    background-color: #ff3737e8;
+}
+
+#sendBTN {
+    width: 100%;
+    padding: 8px;
+    border: 0;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 7px;
+    background-color: royalblue;
+    cursor: pointer;
+    color: white;
+    margin-top: 12px;
+}
+
+.lastMessage {
+    margin-top: 50px;
+    font-size: 35px;
+    font-weight: 600;
+    color: darkgreen;
+    margin-left: 550px;
+}
+
+</style>
+<body>
+    <div class="chatBot">
+        <header>
+            <h2>Feelings ChatBot</h2>
+            <span alt="Close" id="cross">X</span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat-incoming chat">
+                <p>How are you feeling today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea id="userFeelings" rows="1" cols="17" placeholder="Enter your feelings..."></textarea>
+            <button id="sendBTN" onclick="getImageUrl()">Send</button>
+        </div>
+        <div id="imageContainer"></div>
+    </div>
+    <script src="script.js" defer></script>
+    <script>
+        const chatInput = document.querySelector('.chat-input textarea');
+        const sendChatBtn = document.querySelector('#sendBTN');
+        const chatbox = document.querySelector(".chatbox");
+
+        const createChatLi = (message, className) => {
+            const chatLi = document.createElement("li");
+            chatLi.classList.add("chat", className);
+            chatLi.innerHTML = `<p>${message}</p>`;
+            return chatLi;
+        }
+
+        const handleChat = () => {
+            console.log("Clicked send button"); // Check if the send button click event is triggered
+            const userMessage = chatInput.value.trim();
+            if (!userMessage) {
+                return;
+            }
+
+            // Display user's input as a chat message
+            const userChatMessage = createChatLi(userMessage, "chat-outgoing");
+            console.log("User chat message:", userChatMessage); // Check if the user's chat message element is created
+            chatbox.appendChild(userChatMessage);
+            chatbox.scrollTo(0, chatbox.scrollHeight);
+
+            // Clear the input field after sending the message
+            chatInput.value = '';
+        }
+
+        sendChatBtn.addEventListener("click", handleChat);
+    </script>
+    <script>
+        function getImageUrl() {
+            const userMessage = document.getElementById('userFeelings').value;  // Get user input text
+            fetch('/get_image_url/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{ csrf_token }}'  // Include CSRF token for Django POST requests
+                },
+                body: JSON.stringify({ userMessage: userMessage })  // Send user input as JSON data
+            })
+            .then(response => response.json())
+            .then(data => {
+                const imageContainer = document.getElementById('imageContainer');  // Get image container element
+                imageContainer.innerHTML = `<img src="${data.image_url}" alt="Emotion Image">`;  // Display the image
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>    
+</body>
+</html>
