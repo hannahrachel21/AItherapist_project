@@ -18,14 +18,17 @@ import sys
 import os
 from django.contrib import admin
 from django.urls import path
+from django.urls import path
+from django.contrib import admin
 from django.views.generic.base import RedirectView
-from emtiondetect.views import signup,signin,chatbot_success,password_reset_request,password_reset_confirm
+from emtiondetect.views import home,signup,signin,chatbot_success,password_reset_request,password_reset_confirm
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
 
 urlpatterns = [
-    path('', RedirectView.as_view(pattern_name='signin', permanent=False)),
+    path('', RedirectView.as_view(pattern_name='home', permanent=False)),
+    path('home/', home, name='home'),
     path('admin/', admin.site.urls),
     path('signup/', signup, name='signup'),
     path('signin/', signin, name='signin'),
